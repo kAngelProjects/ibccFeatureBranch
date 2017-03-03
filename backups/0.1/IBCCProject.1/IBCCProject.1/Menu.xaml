@@ -1,0 +1,76 @@
+﻿<Window x:Class="IBCCProject._1.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menu" Height="700" Width="800"
+        ResizeMode="NoResize">
+    
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}" x:Key="ImageButtonStyle">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <ContentPresenter/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+
+        <Grid.Background>
+            <VisualBrush>
+                <VisualBrush.Visual>
+                    <MediaElement Source="C:\Users\Katkin\Desktop\ibccCode\ibccCode\0.1\IBCCProject.1\IBCCProject.1\Images\filmEffect.wmv" Width="800" Height="700" Stretch="Fill">
+                    </MediaElement>
+                </VisualBrush.Visual>
+            </VisualBrush>
+        </Grid.Background>
+        
+        <Image Height="140" HorizontalAlignment="Left" Margin="294,12,0,0" Name="cornerImage1" Stretch="Fill" VerticalAlignment="Top" Width="170" Source="/IBCCProject.1;component/Images/IBCCTransparent2.png"/>
+
+        <Label Content="WARTIME MEMORIES" Height="84" FontSize="48" FontFamily="Century"
+               HorizontalAlignment="Center" Margin="126,138,88,0" Name="menu_title" VerticalAlignment="Top" Width="564"/>
+
+        <Border x:Name="border_menu_1" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="44,207,539,311" Background="#A09A9A9A">
+            <Canvas x:Name="canvas_menu_1" Width="150" Height="100">
+                <Button Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Height="100" Width="150"  Style="{StaticResource ImageButtonStyle}" Click="MemoryButton_Click">
+                    <Image x:Name="firstOption" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Source="/IBCCProject.1;component/Images/MemoriesMenu.jpg"/>
+                </Button>
+            </Canvas>
+        </Border>
+        <Border x:Name="border_menu_2" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="287,207,286,311" Background="#A09A9A9A">
+            <Canvas x:Name="canvas_menu_2" Width="150" Height="100">
+                <Button Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Height="100" Width="150"  Style="{StaticResource ImageButtonStyle}" Click="ContactButton_Click">
+                    <Image x:Name="secondOption" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Source="/IBCCProject.1;component/Images/ContactMenu.PNG"></Image>
+                </Button>
+            </Canvas>
+        </Border>
+        <Border x:Name="border_menu_3" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="541,207,41,311" Background="#A09A9A9A">
+            <Canvas x:Name="canvas_menu_3" Width="150" Height="100">
+                <Button Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Height="100" Width="150"  Style="{StaticResource ImageButtonStyle}" Click="ContactButton_Click">
+                    <Image x:Name="thirdOption" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Source="/IBCCProject.1;component/Images/ContributeMenu1.PNG"></Image>
+                </Button>
+            </Canvas>
+        </Border>
+        <Border x:Name="border_menu_4" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="126,446,472,79" Background="#A09A9A9A">
+            <Canvas x:Name="canvas_menu_4" Width="150" Height="100">
+                <Button Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Height="100" Width="150"  Style="{StaticResource ImageButtonStyle}" Click="MemoryButton_Click">
+                    <Image x:Name="fourthOption" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Source="/IBCCProject.1;component/Images/TimelineMenu.PNG"></Image>
+                </Button>
+            </Canvas>
+        </Border>
+        <Border x:Name="border_menu_5" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="441,446,157,79" Background="#A09A9A9A">
+            <Canvas x:Name="canvas_menu_5" Width="150" Height="100">
+                <Button Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Height="100" Width="150"  Style="{StaticResource ImageButtonStyle}" Click="MemoryButton_Click">
+                    <Image x:Name="fiveOption" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Source="/IBCCProject.1;component/Images/HelpMenu.PNG"></Image>
+                </Button>
+            </Canvas>
+        </Border>
+        
+        <Label Content="MEMORIES" FontFamily="Century" FontSize="38" Height="59" HorizontalAlignment="Center" Margin="21,356,523,0" Name="label1" VerticalAlignment="Top" Width="234" />
+        <Label Content="CONTACT" FontFamily="Century" FontSize="38" Height="59" HorizontalAlignment="Center" Margin="283,356,290,0" Name="option2Label" VerticalAlignment="Top" Width="205" />
+        <Label Content="RECORD" FontFamily="Century" FontSize="38" Height="59" HorizontalAlignment="Center" Margin="549,356,50,0" Name="option3Label" VerticalAlignment="Top" Width="179" />
+        <Label Content="TIMELINE" FontFamily="Century" FontSize="36" Height="59" HorizontalAlignment="Center" Margin="111,588,458,0" Name="label2" VerticalAlignment="Top" Width="209" />
+        <Label Content="HELP" FontFamily="Century" FontSize="36" Height="59" HorizontalAlignment="Center" Margin="472,588,186,0" Name="label3" VerticalAlignment="Top" Width="120" />
+    </Grid>
+</Window>

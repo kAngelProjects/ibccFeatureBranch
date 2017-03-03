@@ -1,0 +1,29 @@
+﻿<Window x:Class="IBCCProject._1.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Height="700" Width="1150"
+        ResizeMode="NoResize">
+    <Grid>
+
+        <Grid.Background>
+            <VisualBrush>
+                <VisualBrush.Visual>
+                    <Image Source="/IBCCProject.1;component/Images/backgroundStaticImage.PNG"></Image>
+                </VisualBrush.Visual>
+            </VisualBrush>
+        </Grid.Background>
+
+        <Label Content="Return to menu" HorizontalContentAlignment="Center" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" Margin="27,77,0,0" Name="label1" VerticalAlignment="Top" Width="170" />
+        <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="LightGray" Margin="44,19,0,0" Height="63" Width="138" Click="menuButton_Click">
+            <Image Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" Height="46"/>
+        </Button>
+        <Label Content="ABOUT" Height="71" FontSize="48" FontFamily="Century"
+               HorizontalAlignment="Center" Margin="393,19,181,0" Name="contact_title" VerticalAlignment="Top" Width="204"/>
+        <Image Height="240" HorizontalAlignment="Left" Margin="44,113,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="240" Source="/IBCCProject.1;component/Images/lancasterBomber.jpg" />
+        <TextBlock Height="87" HorizontalAlignment="Center" TextAlignment="Center" Margin="296,0,36,464" Name="textBlock1" Text="The International Bomber Command Centre (IBCC) is being created to provide a world-class facility to serve as a point for recognition, remembrance and reconciliation for Bomber Command." VerticalAlignment="Bottom" Width="796" TextWrapping="Wrap" FontSize="18" FontFamily="Century"/>
+        <Image Height="240" HorizontalAlignment="Left" Margin="832,359,0,0" Name="image2" Source="/IBCCProject.1;component/Images/RAFPoster.jpg" Stretch="Fill" VerticalAlignment="Top" Width="240" />
+        <TextBlock FontFamily="Century" FontSize="18" Height="171" HorizontalAlignment="Center" Margin="78,364,329,0" Name="textBlock2" Text="Lincoln has been chosen for the site as it provides a central point for all 27 bases that earned Lincolnshire the title of 'Bomber County'.  Its Cathedral provided a landmark for crews both leaving and returning from missions and, for those who failed to return, the Cathedral was often their last image of home. The county housed over a third of all the WW2 Bomber Command Stations making it the ideal home for this commemoration of the bravery of the men of Bomber Command." TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="721" />
+        <TextBlock Height="146" HorizontalAlignment="Left" Margin="296,207,0,0" Name="textBlock3" Text="The project includes recording, preserving and relating the stories of all those involved with or impacted by Bomber Command during the Second World War.  Covering the contribution of the men and women from over 60 nations, at all levels, the project will bring to life not only the period of the War, but the fight to gain recognition and the work undertaken to rebuild Europe's cities." VerticalAlignment="Top" Width="796" TextWrapping="Wrap" TextAlignment="Center" FontFamily="Century" FontSize="18" />
+        <TextBlock Height="83" HorizontalAlignment="Right" Margin="0,533,328,0" Name="textBlock4" Text="The IBCC will provide the most comprehensive record of Bomber Command in the world and will ensure that generations to come can learn of their vital role in protecting the freedom we enjoy today." VerticalAlignment="Top" Width="722" TextWrapping="Wrap" TextAlignment="Center" FontFamily="Century" FontSize="18" />
+    </Grid>
+</Window>

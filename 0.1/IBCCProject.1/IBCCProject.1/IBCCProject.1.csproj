@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34DDC7FD-7740-4580-8A3A-E53A7F84C949}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IBCCProject._1</RootNamespace>
+    <AssemblyName>IBCCProject.1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>IBCCTransparent2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Feedback.xaml.cs">
+      <DependentUpon>Admin_Feedback.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Login.xaml.cs">
+      <DependentUpon>Admin_Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Menu.xaml.cs">
+      <DependentUpon>Admin_Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Selection.xaml.cs">
+      <DependentUpon>Admin_Selection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Feedback_Screen.xaml.cs">
+      <DependentUpon>Feedback_Screen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help.xaml.cs">
+      <DependentUpon>Help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Timeline.xaml.cs">
+      <DependentUpon>Timeline.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Timeline2.xaml.cs">
+      <DependentUpon>Timeline2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Timeline_Details.xaml.cs">
+      <DependentUpon>Timeline_Details.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User32Interop.cs" />
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin_Feedback.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin_Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin_Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin_Selection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Contact.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Feedback_Screen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Contact.xaml.cs">
+      <DependentUpon>Contact.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Memory_Form.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Memory_Screen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Memory_Selection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Timeline.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Timeline2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Timeline_Details.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Memory_Form.xaml.cs">
+      <DependentUpon>Memory_Form.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Memory_Screen.xaml.cs">
+      <DependentUpon>Memory_Screen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Memory_Selection.xaml.cs">
+      <DependentUpon>Memory_Selection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\IBCCTransparent2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MemoriesMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ContactMenu.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\HelpMenu.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\TimelineMenu.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ContributeMenu.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ContributeMenu1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\arrow_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\backgroundStaticImage.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chineseCivilWar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chineseCivilWar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chineseCivilWar3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tibet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chinaBackyardFurnace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\greatLeapForward.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\culturalRevolution.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mushroomCloud.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hongKong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\longMarchSatelliteBW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\terracottaArmyBW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\dengXiaoping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\dengXiaoping.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tianamenSquare1BW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tianamenSquare2BW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tiananmenSquare3BW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\enolaGay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\nagasakiImage2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\nagasakiImage1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\okinawaBW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\unitedNationsBW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\atomicBombVictim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\shinkansenBulletTrainBW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tokyoOlympicsBW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\kishi.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ohsumi1BW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\typhoonTipBW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\japaneseRedArmyBW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\studioGhibli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tsunamiDamageBW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\NESBW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\massGrave.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\berlinAirlift.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\nurembergTrials.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\flagOfGermanyBW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\jerusalemTrain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\alliedOccupation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\berlinCityPalace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\flagEastGermanyBW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\berlinTankFaceoff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\contactScreen.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\memoryScreen.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\timelineScreen.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\helpScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\timelineScreen1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IBCCTransparent2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\checkpointCharlie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\berlinWall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\wallChildren.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fallOfSaigon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\redArmyFaction.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\oskarSchindler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\borderDefense.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\newspaperReading.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\wallGravesBW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chippingBerlinWallBW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\kgbLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fallOfBerlinWallBW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\josefMengele.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\britishRationing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\londonUnderground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\nationalHealthService.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\queenElizabethCoronation.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\windscaleReactor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\suezCanal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\thunderbirdMissile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\vietnamProtests.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\commonwealthFlagBW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\derry1900sBW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\miners.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\irishRepublicanArmy.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\panAmMemorialBW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hongKong2BW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\thatcherBW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\infoSymbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\algerianWar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\frenchLiberation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\algerianWar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\indochinaWar.JPEG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\vietMinh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\algerianWar3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\concorde.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\algerianIndependence.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\vietnamPeace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\djibouti.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\guillotine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\vietnamPeace2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\greenpeace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\lebanon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\titanicWreck.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\berlinSovietCapture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\czechoslovakiaInvasion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\newspaperSurrender.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\koreanWar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\stalinDeath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sputnik.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cubanMissileCrisis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\yuriGagarin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ballisticMissile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\supersonicPlane.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\kgbCard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chemicalWarfare.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sovietStamp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chernobyl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\endOfColdWar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\smokeyBear.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\jackieRobinson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\potsdamConference.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\senatorMcCarthy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\littleRockHighSchool.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\eisenhower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\kennedyAssassination.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\martinLutherKing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\moonLanding.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chileCoup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iranHostageCrisis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\nixonLeavingWhitehouse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\challenger.JPEG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\contras.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\usPanamaInvasion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\memorySelectionScreen.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\lancasterBomber.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\x-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\deHavillandComet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MiG21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\U-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\b52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\boeingMonomail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mcdonnellDouglasPhantom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\douglasSkyhawk.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\lockeedSR71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\supersonicPlane1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\supersonicPlane2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\voyagerAircraft1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\vulcanBomber.JPEG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\feedbackPoster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\RAFPoster.jpg" />
+    <Content Include="Images\RAF_Night_Raid.wmv" />
+    <Content Include="Images\War_Pictorial_News.wmv" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

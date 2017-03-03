@@ -1,0 +1,64 @@
+﻿<Window x:Class="IBCCProject._1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wartime Memories" Height="700" Width="800"
+        ResizeMode="NoResize">
+    
+    <Grid>
+        <Grid.Background>
+            <VisualBrush>
+                <VisualBrush.Visual>
+                    <MediaElement Source="C:\Users\Katkin\Desktop\ibccCode\ibccCode\0.1\IBCCProject.1\IBCCProject.1\Images\filmEffect.wmv" Width="800" Height="700" Stretch="Fill">   
+                    </MediaElement>
+                </VisualBrush.Visual>
+            </VisualBrush>
+        </Grid.Background>
+        
+        <Button Content="START" Height="71" HorizontalAlignment="Left" Margin="127,578,0,0" Name="button1" VerticalAlignment="Top" Width="532" Click="openMenu_Click" />
+        <Image Height="181" HorizontalAlignment="Left" Margin="238,12,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="308" Source="/IBCCProject.1;component/Images/IBCCTransparent2.png" Panel.ZIndex="10" />
+
+        <!--rounded corner for TV 'channels'-->
+        <Border x:Name="border1" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="63,202,519,316" Background="#A09A9A9A">
+            <Canvas x:Name="canvas1" Width="150" Height="100">
+                <MediaElement x:Name="channel1" Source="C:\Users\Katkin\Desktop\ibccCode\ibccCode\0.1\IBCCProject.1\IBCCProject.1\Images\airForce1.mp4" Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Volume="0"></MediaElement>
+            </Canvas>
+        </Border>
+
+        <Border x:Name="border2" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="508,202,74,316" Background="#A09A9A9A">
+            <Canvas x:Name="canvas2" Width="150" Height="100">
+                <MediaElement x:Name="secondChannel" Source="C:\Users\Katkin\Desktop\ibccCode\ibccCode\0.1\IBCCProject.1\IBCCProject.1\Images\airForce2.mp4" Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Volume="0"></MediaElement>
+            </Canvas>
+        </Border>
+
+        <Border x:Name="border3" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="288,246,294,272" Background="#A09A9A9A">
+            <Canvas x:Name="canvas3" Width="150" Height="100">
+                <MediaElement x:Name="thirdChannel" Source="C:\Users\Katkin\Desktop\ibccCode\ibccCode\0.1\IBCCProject.1\IBCCProject.1\Images\airForce3.mp4" Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Volume="0"></MediaElement>
+            </Canvas>
+        </Border>
+        <Label Content="WARTIME MEMORIES" Height="84" FontSize="48" FontFamily="Century"
+               HorizontalAlignment="Center" Margin="117,395,97,0" Name="title" VerticalAlignment="Top" Width="564"/>
+
+        <TextBlock Name="AnimatedText" Margin="64,457,74,104" Width="640" Height="100" FontSize="32" FontWeight="Bold" Foreground="Black" TextAlignment="Center" 
+                   FontFamily="Century" TextWrapping="Wrap"> Read memories in the words of the veterans themselves
+            
+              <!-- Animates the text block's opacity. -->
+              <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="TextBlock.Loaded">
+                  <BeginStoryboard>
+                    <Storyboard>
+                      <DoubleAnimation
+                        Storyboard.TargetName="AnimatedText"
+                        Storyboard.TargetProperty="(TextBlock.Opacity)"
+                        From="1.0" To="0.0" Duration="0:0:5" 
+                        AutoReverse="True" RepeatBehavior="Forever" />
+                    </Storyboard>
+                      
+                  </BeginStoryboard>
+                </EventTrigger>
+              </TextBlock.Triggers>
+                    </TextBlock>
+
+        
+        <!--end window code-->
+    </Grid>
+</Window>
