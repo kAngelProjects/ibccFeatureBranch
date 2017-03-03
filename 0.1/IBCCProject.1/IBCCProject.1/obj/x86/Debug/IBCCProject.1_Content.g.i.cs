@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/airforce3.mp4")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/filmeffect.wmv")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/raf_night_raid.wmv")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/war_pictorial_news.wmv")]
 

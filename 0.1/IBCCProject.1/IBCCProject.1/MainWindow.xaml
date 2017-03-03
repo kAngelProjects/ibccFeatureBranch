@@ -8,7 +8,7 @@
         <Grid.Background>
             <VisualBrush>
                 <VisualBrush.Visual>
-                    <MediaElement Source="C:\Users\Katkin\Desktop\ibccCode\ibccCode\0.1\IBCCProject.1\IBCCProject.1\Images\filmEffect.wmv" Width="800" Height="700" Stretch="Fill" MediaEnded="MediaElement_MediaEnded" Name="BackgroundVideo" LoadedBehavior="Manual">   
+                    <MediaElement Source="C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\Images\filmEffect.wmv" Width="800" Height="700" Stretch="Fill" MediaEnded="MediaElement_MediaEnded" Name="BackgroundVideo" LoadedBehavior="Manual">   
                     </MediaElement>
                 </VisualBrush.Visual>
             </VisualBrush>
@@ -20,19 +20,19 @@
         <!--rounded corner for TV 'channels'-->
         <Border x:Name="border1" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="105,202,778,287" Background="#A09A9A9A">
             <Canvas x:Name="canvas1" Width="200" Height="150">
-                <MediaElement x:Name="channel1" Source="C:\Users\Katkin\Desktop\ibccCode\ibccCode\0.1\IBCCProject.1\IBCCProject.1\Images\RAF_Night_Raid.wmv" Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="150" Width="200" Panel.ZIndex="10" Volume="0" LoadedBehavior="Manual" MediaEnded="channel1_MediaEnded"></MediaElement>
+                <MediaElement x:Name="channel1" Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="150" Width="200" Panel.ZIndex="10" Volume="0" LoadedBehavior="Manual" MediaEnded="channel1_MediaEnded" Source="C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\Images\RAF_Night_Raid.wmv"></MediaElement>
             </Canvas>
         </Border>
 
         <Border x:Name="border2" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="773,202,99,287" Background="#A09A9A9A">
             <Canvas x:Name="canvas2" Width="200" Height="150">
-                <MediaElement x:Name="secondChannel" Source="C:\Users\Katkin\Desktop\ibccCode\ibccCode\0.1\IBCCProject.1\IBCCProject.1\Images\War_Pictorial_News.wmv" Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="150" Width="200" Panel.ZIndex="10" Volume="0" LoadedBehavior="Manual" MediaEnded="secondChannel_MediaEnded"></MediaElement>
+                <MediaElement x:Name="secondChannel" Source="C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\Images\airForce3.mp4" Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="150" Width="200" Panel.ZIndex="10" Volume="0" LoadedBehavior="Manual" MediaEnded="secondChannel_MediaEnded"></MediaElement>
             </Canvas>
         </Border>
 
         <Border x:Name="border3" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="437,213,433,266" Background="#A09A9A9A">
             <Canvas x:Name="canvas3" Width="200" Height="150">
-                <MediaElement x:Name="thirdChannel" Source="C:\Users\Katkin\Desktop\ibccCode\ibccCode\0.1\IBCCProject.1\IBCCProject.1\Images\airForce3.mp4" Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="150" Width="200" Panel.ZIndex="10" Volume="0" LoadedBehavior="Manual" MediaEnded="thirdChannel_MediaEnded"></MediaElement>
+                <MediaElement x:Name="thirdChannel" Source="C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\Images\airForce3.mp4" Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="150" Width="200" Panel.ZIndex="10" Volume="0" LoadedBehavior="Manual" MediaEnded="thirdChannel_MediaEnded"></MediaElement>
             </Canvas>
         </Border>
         <Label Content="WARTIME MEMORIES" Height="84" FontSize="48" FontFamily="Century"

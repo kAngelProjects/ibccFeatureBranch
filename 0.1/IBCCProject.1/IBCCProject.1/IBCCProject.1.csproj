@@ -680,8 +680,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\RAFPoster.jpg" />
-    <Content Include="Images\RAF_Night_Raid.wmv" />
-    <Content Include="Images\War_Pictorial_News.wmv" />
+    <Content Include="Images\airForce3.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\filmEffect.wmv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\RAF_Night_Raid.wmv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\War_Pictorial_News.wmv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
