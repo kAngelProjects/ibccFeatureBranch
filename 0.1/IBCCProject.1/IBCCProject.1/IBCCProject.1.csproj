@@ -683,12 +683,19 @@
     <Content Include="Images\airForce3.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\chinaFlagBW.png" />
     <Content Include="Images\filmEffect.wmv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\frenchFlagBW.png" />
+    <Resource Include="Images\flagOfGermanyBW1.png" />
+    <Resource Include="Images\japanFlagBW.png" />
     <Content Include="Images\RAF_Night_Raid.wmv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\usaFlagBW.png" />
+    <Resource Include="Images\unionJackBW.png" />
+    <Resource Include="Images\russianFlagBW.png" />
     <Content Include="Images\War_Pictorial_News.wmv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

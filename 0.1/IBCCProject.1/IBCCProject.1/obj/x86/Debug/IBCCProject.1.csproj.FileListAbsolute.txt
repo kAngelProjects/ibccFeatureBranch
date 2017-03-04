@@ -90,3 +90,4 @@ C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProj
 C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\bin\Debug\Images\airForce3.mp4
 C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\bin\Debug\Images\filmEffect.wmv
 C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\bin\Debug\Images\War_Pictorial_News.wmv
+C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\obj\x86\Debug\IBCCProject.1.csprojResolveAssemblyReference.cache

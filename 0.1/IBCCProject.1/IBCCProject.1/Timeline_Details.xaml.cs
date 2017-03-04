@@ -35,9 +35,9 @@ namespace IBCCProject._1
 
         private void menuButton_Click(object sender, RoutedEventArgs e)
         {
-            //Timeline2 timelineWindow = new Timeline2();
-            //timelineWindow.Show();
-            //this.Close();
+            Menu menuWindow = new Menu();
+            menuWindow.Show();
+            this.Close();
         }
 
         private void setText(string countryValue, string yearValue)
