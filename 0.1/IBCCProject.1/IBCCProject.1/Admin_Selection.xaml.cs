@@ -190,6 +190,7 @@ namespace IBCCProject._1
         private void btnFirst_Click(object sender, System.EventArgs e)
         {
             CustomPaging((int)PagingMode.First);
+            MessageBox.Show("Test");
         }
 
         private void btnNext_Click(object sender, System.EventArgs e)

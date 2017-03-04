@@ -187,31 +187,31 @@ namespace IBCCProject._1
             }
         } //end custom paging
 
-        private void btnFirst_Click(object sender, System.EventArgs e)
-        {
-            CustomPaging((int)PagingMode.First);
-        }
-
-        private void btnNext_Click(object sender, System.EventArgs e)
-        {
-            CustomPaging((int)PagingMode.Next);
-        }
-
-        private void btnPrev_Click(object sender, System.EventArgs e)
-        {
-            CustomPaging((int)PagingMode.Previous);
-        }
-
-        private void btnLast_Click(object sender, System.EventArgs e)
-        {
-            CustomPaging((int)PagingMode.Last);
-        }
-
         private void menuButton_Click(object sender, RoutedEventArgs e)
         {
             Menu menuWindow = new Menu();
             menuWindow.Show();
             this.Close();
+        }
+
+        private void btnPrev_Click(object sender, RoutedEventArgs e)
+        {
+            CustomPaging((int)PagingMode.Previous);
+        }
+
+        private void btnFirst_Click(object sender, RoutedEventArgs e)
+        {
+            CustomPaging((int)PagingMode.First);
+        }
+
+        private void btnNext_Click(object sender, RoutedEventArgs e)
+        {
+            CustomPaging((int)PagingMode.Next);
+        }
+
+        private void btnLast_Click(object sender, RoutedEventArgs e)
+        {
+            CustomPaging((int)PagingMode.Last);
         }
 
     }

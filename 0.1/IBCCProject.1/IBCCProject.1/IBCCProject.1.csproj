@@ -690,6 +690,10 @@
     <Resource Include="Images\frenchFlagBW.png" />
     <Resource Include="Images\flagOfGermanyBW1.png" />
     <Resource Include="Images\japanFlagBW.png" />
+    <Resource Include="Images\firstArrow.png" />
+    <Resource Include="Images\previousArrow.png" />
+    <Resource Include="Images\nextArrow.png" />
+    <Resource Include="Images\lastArrow.png" />
     <Content Include="Images\RAF_Night_Raid.wmv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
