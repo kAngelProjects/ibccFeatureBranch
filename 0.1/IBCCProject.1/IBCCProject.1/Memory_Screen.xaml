@@ -25,7 +25,7 @@
         
         <TextBlock Height="50" HorizontalAlignment="Left" Margin="240,107,0,0" Name="memoryTitle" Text="Loading..." VerticalAlignment="Top" Width="656" TextAlignment="Center" FontSize="18" TextWrapping="Wrap" FontFamily="Century" Foreground="#FF9C4A0E" />
         
-        <Button Content="RETURN" Height="62" HorizontalAlignment="Left" Margin="316,540,0,0" Name="backButton" VerticalAlignment="Top" Width="189" Click="backButton_Click" Background="#FF949392" />
+        <Button Content="RETURN TO MEMORY SELECTION" Height="62" HorizontalAlignment="Left" Margin="316,540,0,0" Name="backButton" VerticalAlignment="Top" Width="189" Click="backButton_Click" Background="#FF949392" />
         <Button Content="FLAG" Height="62" HorizontalAlignment="Left" Margin="642,540,0,0" Name="flagButton" VerticalAlignment="Top" Width="189" Click="flagButton_Click" Background="#FF949392" />
 
         <Label Content="Have wartime memorabilia? Visit the Contact Screen to see if you could contribute to the Digital Archive." Height="34" HorizontalAlignment="Left" Margin="196,610,0,0" Name="label3" VerticalAlignment="Top" Width="739" FontSize="15" FontFamily="Century" />

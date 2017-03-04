@@ -39,12 +39,12 @@ namespace IBCCProject._1
             channel1.Play();
 
 
-            secondChannel.LoadedBehavior = MediaState.Manual;
-            secondChannel.Source = new Uri(@"C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\Images\airForce3.mp4");
-            //@ means that the string behind is a path so / won't be 
-            //treated like a special character
-            secondChannel.Position = TimeSpan.FromSeconds(0);
-            secondChannel.Play();
+            //secondChannel.LoadedBehavior = MediaState.Manual;
+            //secondChannel.Source = new Uri(@"C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\Images\airForce3.mp4");
+            ////@ means that the string behind is a path so / won't be 
+            ////treated like a special character
+            //secondChannel.Position = TimeSpan.FromSeconds(0);
+            //secondChannel.Play();
 
             thirdChannel.LoadedBehavior = MediaState.Manual;
             thirdChannel.Source = new Uri(@"C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\Images\War_Pictorial_News.wmv");
@@ -79,12 +79,6 @@ namespace IBCCProject._1
         {
             channel1.Position = TimeSpan.FromSeconds(0);
             channel1.Play();
-        }
-
-        private void secondChannel_MediaEnded(object sender, RoutedEventArgs e)
-        {
-            secondChannel.Position = TimeSpan.FromSeconds(0);
-            secondChannel.Play();
         }
 
         private void thirdChannel_MediaEnded(object sender, RoutedEventArgs e)
