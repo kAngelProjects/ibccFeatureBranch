@@ -14,31 +14,24 @@
             </VisualBrush>
         </Grid.Background>
         
-        <Button Content="START" Height="71" HorizontalAlignment="Left" Margin="289,575,0,0" Name="button1" VerticalAlignment="Top" Width="532" Click="openMenu_Click" />
+        <Button Content="START" Height="71" HorizontalAlignment="Left" Margin="289,575,0,0" Name="button1" VerticalAlignment="Top" Width="532" Click="openMenu_Click" FontSize="20" Background="#FF949392" FontWeight="SemiBold" />
         <Image Height="187" HorizontalAlignment="Left" Margin="411,12,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="328" Source="/IBCCProject.1;component/Images/IBCCTransparent2.png" Panel.ZIndex="10" />
 
         <!--rounded corner for TV 'channels'-->
-        <Border x:Name="border1" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="105,202,778,287" Background="#A09A9A9A">
+        <Border x:Name="border1" BorderBrush="#9c4a0e" BorderThickness="5" CornerRadius="50" Margin="95,202,726,250" Background="Black" Width="300">
             <Canvas x:Name="canvas1" Width="200" Height="150">
                 <MediaElement x:Name="channel1" Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="150" Width="200" Panel.ZIndex="10" Volume="0" LoadedBehavior="Manual" MediaEnded="channel1_MediaEnded" Source="C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\Images\RAF_Night_Raid.wmv"></MediaElement>
             </Canvas>
         </Border>
-
-        <Border x:Name="border2" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="773,202,99,287" Background="#A09A9A9A">
-            <Canvas x:Name="canvas2" Width="200" Height="150">
-                <MediaElement x:Name="secondChannel" Source="C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\Images\airForce3.mp4" Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="150" Width="200" Panel.ZIndex="10" Volume="0" LoadedBehavior="Manual" MediaEnded="secondChannel_MediaEnded"></MediaElement>
-            </Canvas>
-        </Border>
-
-        <Border x:Name="border3" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="437,213,433,266" Background="#A09A9A9A">
+        <Border x:Name="border3" BorderBrush="#9c4a0e" BorderThickness="5" CornerRadius="50" Margin="741,213,69,250" Background="Black" Width="300">
             <Canvas x:Name="canvas3" Width="200" Height="150">
                 <MediaElement x:Name="thirdChannel" Source="C:\Users\Katkin\Desktop\featureCode\ibccFeatureBranch\0.1\IBCCProject.1\IBCCProject.1\Images\airForce3.mp4" Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="150" Width="200" Panel.ZIndex="10" Volume="0" LoadedBehavior="Manual" MediaEnded="thirdChannel_MediaEnded"></MediaElement>
             </Canvas>
         </Border>
         <Label Content="WARTIME MEMORIES" Height="84" FontSize="48" FontFamily="Century"
-               HorizontalAlignment="Center" Margin="289,401,275,0" Name="title" VerticalAlignment="Top" Width="564"/>
+               HorizontalAlignment="Center" Margin="289,401,275,0" Name="title" VerticalAlignment="Top" Width="564" Foreground="#FF9C4A0E" FontWeight="ExtraBold" />
 
-        <TextBlock Name="AnimatedText" Margin="64,481,69,110" FontSize="32" FontWeight="Bold" Foreground="Black" TextAlignment="Center" 
+        <TextBlock Name="AnimatedText" Margin="64,481,69,110" FontSize="32" FontWeight="Bold" Foreground="#FF9C4A0E" TextAlignment="Center" 
                    FontFamily="Century" TextWrapping="Wrap"> Read memories in the words of the veterans themselves
             
               <!-- Animates the text block's opacity. -->

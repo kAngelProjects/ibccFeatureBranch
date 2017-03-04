@@ -14,21 +14,21 @@
         </Grid.Background>
 
         <Label Content="Return to menu" HorizontalContentAlignment="Center" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" Margin="27,77,0,0" Name="label1" VerticalAlignment="Top" Width="170" />
-        <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="LightGray" Margin="44,19,0,0" Height="63" Width="138" Click="menuButton_Click">
+        <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF949392" Margin="44,19,0,0" Height="63" Width="138" Click="menuButton_Click">
             <Image Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" Height="46"/>
         </Button>
 
         <Label Content="HELP" Height="71" FontSize="48" FontFamily="Century"
-               HorizontalAlignment="Center" Margin="268,19,240,0" Name="timeline_title" VerticalAlignment="Top" Width="156"/>
+               HorizontalAlignment="Center" Margin="268,19,240,0" Name="timeline_title" VerticalAlignment="Top" Width="156" Foreground="#FF9C4A0E" FontWeight="SemiBold" />
 
-        <Label Content="Please choose a screen." Height="38" HorizontalAlignment="Left" Margin="460,96,0,0" Name="label2" VerticalAlignment="Top" FontSize="20" FontFamily="Century" />
+        <Label Content="Please choose a screen." Height="38" HorizontalAlignment="Left" Margin="460,96,0,0" Name="label2" VerticalAlignment="Top" FontSize="20" FontFamily="Century" Foreground="#FF9C4A0E" />
         
-        <TextBlock Height="128" HorizontalAlignment="Left" Margin="62,234,0,0" Name="summaryBox" Text="Help Text" VerticalAlignment="Top" Width="1008" TextAlignment="Center" FontSize="24" TextWrapping="Wrap"/>
+        <TextBlock Height="128" HorizontalAlignment="Left" Margin="62,234,0,0" Name="summaryBox" Text="Help Text" VerticalAlignment="Top" Width="1008" TextAlignment="Center" FontSize="24" TextWrapping="Wrap" Foreground="#FF9C4A0E" />
         <Image Height="224" HorizontalAlignment="Left" Margin="312,368,0,0" Name="screenshotImage" Stretch="Fill" VerticalAlignment="Top" Width="471" Source="/IBCCProject.1;component/Images/memorySelectionScreen.PNG" />
         <Label Content="Have wartime memorabilia? Visit the Contact Screen to see if you could contribute to the Digital Archive." Height="34" HorizontalAlignment="Left" Margin="182,604,0,0" Name="label3" VerticalAlignment="Top" Width="739" FontSize="15" FontFamily="Century" />
-        <Button Content="Memories" Height="91" HorizontalAlignment="Left" Margin="62,137,0,0" Name="memoryHelp" VerticalAlignment="Top" Width="170" Click="memoryHelp_Click"/>
-        <Button Content="Contact" Height="91" HorizontalAlignment="Left" Margin="312,137,0,0" Name="contactHelp" VerticalAlignment="Top" Width="170" Click="contactHelp_Click"/>
-        <Button Content="Record" Height="91" HorizontalAlignment="Left" Margin="658,137,0,0" Name="recordHelp" VerticalAlignment="Top" Width="170" Click="recordHelp_Click"/>
-        <Button Content="Timeline" Height="91" HorizontalAlignment="Left" Margin="900,137,0,0" Name="timelineHelp" VerticalAlignment="Top" Width="170" Click="timelineHelp_Click"/>
+        <Button Content="Memories" Height="91" HorizontalAlignment="Left" Margin="62,137,0,0" Name="memoryHelp" VerticalAlignment="Top" Width="170" Click="memoryHelp_Click" Background="#FF949392" />
+        <Button Content="Contact" Height="91" HorizontalAlignment="Left" Margin="312,137,0,0" Name="contactHelp" VerticalAlignment="Top" Width="170" Click="contactHelp_Click" Background="#FF949392" />
+        <Button Content="Record" Height="91" HorizontalAlignment="Left" Margin="658,137,0,0" Name="recordHelp" VerticalAlignment="Top" Width="170" Click="recordHelp_Click" Background="#FF949392" />
+        <Button Content="Timeline" Height="91" HorizontalAlignment="Left" Margin="900,137,0,0" Name="timelineHelp" VerticalAlignment="Top" Width="170" Click="timelineHelp_Click" Background="#FF949392" />
     </Grid>
 </Window>

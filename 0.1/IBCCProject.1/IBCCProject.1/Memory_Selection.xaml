@@ -27,13 +27,13 @@
         </Grid.Background>
 
         <Label Content="Return to menu" HorizontalContentAlignment="Center" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" Margin="27,77,0,0" Name="label1" VerticalAlignment="Top" Width="170" />
-        <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="LightGray" Margin="44,19,0,0" Height="63" Width="138" Click="menuButton_Click">
+        <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF949392" Margin="44,19,0,0" Height="63" Width="138" Click="menuButton_Click">
             <Image Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" Height="46"/>
         </Button>
 
         <Label Content="MEMORY MENU" Height="71" FontSize="48" FontFamily="Century"
-               HorizontalAlignment="Center" Margin="365,28,345,0" Name="contact_title" VerticalAlignment="Top" Width="418"/>
-        <ListView Name="pagination" Margin="103,158,106,136" ItemsSource="{Binding}">
+               HorizontalAlignment="Center" Margin="365,28,345,0" Name="contact_title" VerticalAlignment="Top" Width="418" Foreground="#FF9C4A0E" FontWeight="SemiBold" />
+        <ListView Name="pagination" Margin="103,158,106,136" ItemsSource="{Binding}" Background="#FFB7A87D">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="Height" Value="100" />
@@ -41,7 +41,15 @@
             </ListView.ItemContainerStyle>
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Memory Title" Width="620" DisplayMemberBinding="{Binding Path=memory_title}"></GridViewColumn>
+                    <GridView.ColumnHeaderContainerStyle>
+                        <Style TargetType="{x:Type GridViewColumnHeader}">
+                            <!-- Set any properties you want to set -->
+                            <Setter Property="Background" Value="#FF9C4A0E" />
+                            <Setter Property="Foreground" Value="Black" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                        </Style>
+                    </GridView.ColumnHeaderContainerStyle>
+                    <GridViewColumn Header="Memory Title" Width="620" DisplayMemberBinding="{Binding Path=memory_title}" ></GridViewColumn>
                     <GridViewColumn Header=" " Width="300">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
@@ -54,7 +62,7 @@
         </ListView>
         <Label Height="23.277" HorizontalAlignment="Left" Margin="552,0,0,64"
     Name="lblPageNumber" VerticalAlignment="Bottom" Width="26.63" Content="1"/>
-        <Label Content="If you see offensive or irrelevant entries, please select Read and then use the Flag button the next screen." Height="35" HorizontalAlignment="Left" Margin="219,117,0,0" Name="label2" VerticalAlignment="Top" Width="697" FontFamily="Century" HorizontalContentAlignment="Center" FontSize="14"/>
+        <Label Content="If you see offensive or irrelevant entries, please select Read and then use the Flag button the next screen." Height="35" HorizontalAlignment="Left" Margin="219,117,0,0" Name="label2" VerticalAlignment="Top" Width="697" FontFamily="Century" HorizontalContentAlignment="Center" FontSize="14" Foreground="#FF9C4A0E" />
 
         <Canvas x:Name="canvas_menu" Width="135" Height="70" Margin="194,550,0,41" HorizontalAlignment="Left">
             <Button Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Height="70" Width="135"  Style="{StaticResource ImageButtonStyle}" Name="btnFirst" Click="btnFirst_Click">

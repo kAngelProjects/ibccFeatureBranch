@@ -32,44 +32,44 @@
         </Canvas>
 
         <Label Content="WARTIME MEMORIES" Height="84" FontSize="48" FontFamily="Century"
-               HorizontalAlignment="Center" Margin="126,138,88,0" Name="menu_title" VerticalAlignment="Top" Width="564"/>
+               HorizontalAlignment="Center" Margin="270,138,294,0" Name="menu_title" VerticalAlignment="Top" Width="564" Foreground="#FF9C4A0E" FontWeight="ExtraBold" />
 
-        <Border x:Name="border_menu_1" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="44,207,824,311" Background="#A09A9A9A">
+        <Border x:Name="border_menu_1" BorderBrush="#9c4a0e" BorderThickness="5" CornerRadius="50" Margin="44,207,824,311" Background="Black">
             <Canvas x:Name="canvas_menu_1" Width="150" Height="100">
                 <Button Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Height="100" Width="150"  Style="{StaticResource ImageButtonStyle}" Click="MemoryButton_Click">
                     <Image x:Name="firstOption" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Source="/IBCCProject.1;component/Images/MemoriesMenu.jpg"/>
                 </Button>
             </Canvas>
         </Border>
-        <Border x:Name="border_menu_2" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="404,207,434,311" Background="#A09A9A9A">
+        <Border x:Name="border_menu_2" BorderBrush="#9c4a0e" BorderThickness="5" CornerRadius="50" Margin="404,207,434,311" Background="Black">
             <Canvas x:Name="canvas_menu_2" Width="150" Height="100">
                 <Button Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Height="100" Width="150"  Style="{StaticResource ImageButtonStyle}" Click="ContactButton_Click">
                     <Image x:Name="secondOption" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Source="/IBCCProject.1;component/Images/ContactMenu.PNG"></Image>
                 </Button>
             </Canvas>
         </Border>
-        <Border x:Name="border_menu_3" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="796,207,41,311" Background="#A09A9A9A">
+        <Border x:Name="border_menu_3" BorderBrush="#9c4a0e" BorderThickness="5" CornerRadius="50" Margin="796,207,41,311" Background="Black">
             <Canvas x:Name="canvas_menu_3" Width="150" Height="100">
                 <Button Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Height="100" Width="150"  Style="{StaticResource ImageButtonStyle}" Click="RecordButton_Click">
                     <Image x:Name="thirdOption" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Source="/IBCCProject.1;component/Images/ContributeMenu1.PNG"></Image>
                 </Button>
             </Canvas>
         </Border>
-        <Border x:Name="border_menu_4" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="59,446,824,79" Background="#A09A9A9A">
+        <Border x:Name="border_menu_4" BorderBrush="#9c4a0e" BorderThickness="5" CornerRadius="50" Margin="59,446,824,79" Background="Black">
             <Canvas x:Name="canvas_menu_4" Width="150" Height="100">
                 <Button Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Height="100" Width="150"  Style="{StaticResource ImageButtonStyle}" Name="timelineButton" Click="timelineButton_Click">
                     <Image x:Name="fourthOption" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Source="/IBCCProject.1;component/Images/TimelineMenu.PNG"></Image>
                 </Button>
             </Canvas>
         </Border>
-        <Border x:Name="border_menu_5" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="787,446,41,79" Background="#A09A9A9A">
+        <Border x:Name="border_menu_5" BorderBrush="#9c4a0e" BorderThickness="5" CornerRadius="50" Margin="787,446,41,79" Background="Black">
             <Canvas x:Name="canvas_menu_5" Width="150" Height="100">
                 <Button Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Height="100" Width="150"  Style="{StaticResource ImageButtonStyle}" Click="HelpButton_Click">
                     <Image x:Name="fiveOption" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Source="/IBCCProject.1;component/Images/HelpMenu.PNG"></Image>
                 </Button>
             </Canvas>
         </Border>
-        <Border x:Name="border_menu_6" BorderBrush="#FF9A9A9A" BorderThickness="5" CornerRadius="50" Margin="404,446,434,79" Background="#A09A9A9A">
+        <Border x:Name="border_menu_6" BorderBrush="#9c4a0e" BorderThickness="5" CornerRadius="50" Margin="404,446,434,79" Background="Black">
             <Canvas x:Name="canvas_menu_6" Width="150" Height="100">
                 <Button Margin="60,120,200,30" Canvas.Left="-60" Canvas.Top="-120" Height="100" Width="150"  Style="{StaticResource ImageButtonStyle}" Name="feedbackButton" Click="feedbackButton_Click">
                     <Image x:Name="sixthOption" Canvas.Left="-60" Canvas.Top="-120" Stretch="Fill" Height="100" Width="150" Panel.ZIndex="10" Source="/IBCCProject.1;component/Images/feedbackPoster.jpg"></Image>
@@ -77,13 +77,13 @@
             </Canvas>
         </Border>
         
-        <Label Content="MEMORIES" FontFamily="Century" FontSize="38" Height="59" HorizontalAlignment="Center" Margin="70,356,824,0" Name="label1" VerticalAlignment="Top" Width="234" />
-        <Label Content="CONTACT" FontFamily="Century" FontSize="38" Height="59" HorizontalAlignment="Center" Margin="428,356,496,0" Name="option2Label" VerticalAlignment="Top" Width="205" />
-        <Label Content="RECORD" FontFamily="Century" FontSize="38" Height="59" HorizontalAlignment="Center" Margin="838,356,112,0" Name="option3Label" VerticalAlignment="Top" Width="179" />
-        <Label Content="TIMELINE" FontFamily="Century" FontSize="36" Height="59" HorizontalAlignment="Center" Margin="86,588,832,0" Name="label2" VerticalAlignment="Top" Width="209" />
-        <Label Content="HELP" FontFamily="Century" FontSize="36" Height="59" HorizontalAlignment="Center" Margin="866,588,142,0" Name="label3" VerticalAlignment="Top" Width="120" />
-        <Label Content="FEEDBACK" FontFamily="Century" FontSize="36" Height="59" HorizontalAlignment="Center" Margin="424,590,484,0" Name="label4" VerticalAlignment="Top" Width="220" />
-        <Button Content="Admin Login" Height="80" HorizontalAlignment="Left" Margin="99,46,0,0" Name="adminButton" VerticalAlignment="Top" Width="150" Click="adminButton_Click" />
-        <Button Content="About" Height="80" HorizontalAlignment="Left" Margin="888,46,0,0" Name="aboutButton" VerticalAlignment="Top" Width="128" Click="aboutButton_Click" />
+        <Label Content="MEMORIES" FontFamily="Century" FontSize="38" Height="59" HorizontalAlignment="Center" Margin="54,356,818,0" Name="label1" VerticalAlignment="Top" Width="256" Foreground="#FF9C4A0E" FontWeight="SemiBold" />
+        <Label Content="CONTACT" FontFamily="Century" FontSize="38" Height="59" HorizontalAlignment="Center" Margin="428,356,484,0" Name="option2Label" VerticalAlignment="Top" Width="216" Foreground="#FF9C4A0E" FontWeight="SemiBold" />
+        <Label Content="RECORD" FontFamily="Century" FontSize="38" Height="59" HorizontalAlignment="Center" Margin="838,356,90,0" Name="option3Label" VerticalAlignment="Top" Width="200" Foreground="#FF9C4A0E" FontWeight="SemiBold" />
+        <Label Content="TIMELINE" FontFamily="Century" FontSize="36" Height="59" HorizontalAlignment="Center" Margin="76,588,842,0" Name="label2" VerticalAlignment="Top" Width="209" Foreground="#FF9C4A0E" FontWeight="SemiBold" />
+        <Label Content="HELP" FontFamily="Century" FontSize="36" Height="59" HorizontalAlignment="Center" Margin="866,588,142,0" Name="label3" VerticalAlignment="Top" Width="120" Foreground="#FF9C4A0E" FontWeight="SemiBold" />
+        <Label Content="FEEDBACK" FontFamily="Century" FontSize="36" Height="59" HorizontalAlignment="Center" Margin="424,590,464,0" Name="label4" VerticalAlignment="Top" Width="240" Foreground="#FF9C4A0E" FontWeight="SemiBold" />
+        <Button Content="Admin Login" Height="80" HorizontalAlignment="Left" Margin="99,46,0,0" Name="adminButton" VerticalAlignment="Top" Width="150" Click="adminButton_Click" Background="#FF949392" FontWeight="SemiBold" FontSize="20" />
+        <Button Content="About" Height="80" HorizontalAlignment="Left" Margin="888,46,0,0" Name="aboutButton" VerticalAlignment="Top" Width="128" Click="aboutButton_Click" FontSize="20" FontWeight="SemiBold" Background="#FF949392" />
     </Grid>
 </Window>

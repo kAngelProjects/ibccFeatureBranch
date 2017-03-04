@@ -17,21 +17,21 @@
         </Grid.Background>
 
         <Label Content="Return to menu" HorizontalContentAlignment="Center" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" Margin="27,27,0,0" Name="label1" VerticalAlignment="Top" Width="170" Grid.Row="1" />
-        <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="LightGray" Margin="44,19,0,0" Height="63" Width="138" Click="menuButton_Click" Grid.RowSpan="2">
+        <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF949392" Margin="44,19,0,0" Height="63" Width="138" Click="menuButton_Click" Grid.RowSpan="2">
             <Image Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" Height="46"/>
         </Button>
 
         <Label Content="FEEDBACK" Height="71" FontSize="48" FontFamily="Century"
-               HorizontalAlignment="Center" Margin="450,19,382,0" Name="feedback_title" VerticalAlignment="Top" Width="296" Grid.RowSpan="2" />
+               HorizontalAlignment="Center" Margin="416,19,416,0" Name="feedback_title" VerticalAlignment="Top" Width="296" Grid.RowSpan="2" Foreground="#FF9C4A0E" FontWeight="SemiBold" />
 
-        <Label Content="If you have any feedback on this or other exhibits, " Height="38" HorizontalAlignment="Left" Margin="334,27,0,0" Name="label2" VerticalAlignment="Top" FontSize="20" FontFamily="Century" Grid.Row="1" />
-        <Label Content="please leave a message below." Height="39" HorizontalAlignment="Left" Margin="426,46,0,0" Name="label3" VerticalAlignment="Top" FontSize="20" FontFamily="Century" Grid.Row="1" />
+        <Label Content="If you have any feedback on this or other exhibits, " Height="38" HorizontalAlignment="Left" Margin="334,27,0,0" Name="label2" VerticalAlignment="Top" FontSize="20" FontFamily="Century" Grid.Row="1" Foreground="#FF9C4A0E" />
+        <Label Content="please leave a message below." Height="39" HorizontalAlignment="Left" Margin="426,46,0,0" Name="label3" VerticalAlignment="Top" FontSize="20" FontFamily="Century" Grid.Row="1" Foreground="#FF9C4A0E" />
         <TextBox Height="92" HorizontalAlignment="Left" Margin="58,80,0,0" Name="feedbackBox" VerticalAlignment="Top" Width="1008" LostKeyboardFocus="TextBoxLostKeyboardFocus" MaxLength="200" Grid.Row="1" TextWrapping="Wrap" />
         
         
         
-        <Button Content="SEND" Height="72" HorizontalAlignment="Left" Margin="435,515,0,0" Name="sendButton" VerticalAlignment="Top" Width="229" Click="sendButton_Click" FontSize="18" Grid.Row="1" />
-        <TabControl Margin="11,178,12,113" Grid.Row="1">
+        <Button Content="SEND" Height="72" HorizontalAlignment="Left" Margin="435,515,0,0" Name="sendButton" VerticalAlignment="Top" Width="229" Click="sendButton_Click" FontSize="18" Grid.Row="1" Background="#FF949392" />
+        <TabControl Margin="11,178,12,113" Grid.Row="1" Background="#FFB7A87D">
             <TabItem Header="Letters" Height="45" Name="letterTab" Width="100">
                 <Grid>
                     <Button Click="qButton_Click" Content="Q" FontFamily="Century" Height="50" HorizontalAlignment="Left" Margin="16,65,0,0" Name="qButton" VerticalAlignment="Top" Width="74" />

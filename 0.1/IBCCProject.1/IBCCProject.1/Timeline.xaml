@@ -13,57 +13,57 @@
             </VisualBrush>
         </Grid.Background>
 
-        <Label Content="Return to menu" HorizontalContentAlignment="Center" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" Margin="44,92,0,0" Name="label1" VerticalAlignment="Top" Width="170" />
-        <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="LightGray" Margin="62,28,0,0" Height="63" Width="138" Click="menuButton_Click">
+        <Label Content="Return to menu" HorizontalContentAlignment="Center" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" Margin="44,92,0,0" Name="label1" VerticalAlignment="Top" Width="170" Foreground="#FF9C4A0E" />
+        <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF949392" Margin="62,28,0,0" Height="63" Width="138" Click="menuButton_Click">
             <Image Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" Height="46"/>
         </Button>
 
         <Label Content="TIMELINE" Height="71" FontSize="48" FontFamily="Century"
-               HorizontalAlignment="Center" Margin="398,36,460,0" Name="timeline_title" VerticalAlignment="Top" Width="270"/>
+               HorizontalAlignment="Center" Margin="398,36,460,0" Name="timeline_title" VerticalAlignment="Top" Width="270" Foreground="#FF9C4A0E" FontWeight="SemiBold" />
         <Rectangle Height="24" HorizontalAlignment="Left" Margin="54,400,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="1001" Fill="Black" />
         <Rectangle Height="80" HorizontalAlignment="Left" Margin="156,325,0,0" Name="rectangle2" Stroke="Black" VerticalAlignment="Top" Width="10" Fill="Black" />
         
-        <Button Margin="176,484,762,69" Name="fiftiesButton" Click="fiftiesButton_Click">
+        <Button Margin="201,484,737,69" Name="fiftiesButton" Click="fiftiesButton_Click" Background="#FF949392">
             <StackPanel Orientation="Horizontal">
                 <Image Height="70" Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" />
                 <TextBlock Text="1950s" VerticalAlignment="Center" />
             </StackPanel>
         </Button>
         
-        <Rectangle Height="80" HorizontalAlignment="Left" Margin="253,405,0,0" Name="rectangle3" Stroke="Black" VerticalAlignment="Top" Width="10" Fill="Black" />
+        <Rectangle Height="80" HorizontalAlignment="Left" Margin="306,405,0,0" Name="rectangle3" Stroke="Black" VerticalAlignment="Top" Width="10" Fill="Black" />
         <Rectangle Height="80" HorizontalAlignment="Left" Margin="492,325,0,0" Name="rectangle4" Stroke="Black" VerticalAlignment="Top" Width="10" Fill="Black" />
-        <Button Margin="554,484,384,69" Name="seventiesButton" Click="seventiesButton_Click">
+        <Button Margin="618,484,320,69" Name="seventiesButton" Click="seventiesButton_Click" Background="#FF949392">
             <StackPanel Orientation="Horizontal">
                 <Image Height="70" Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" />
                 <TextBlock Text="1970s" VerticalAlignment="Center" />
             </StackPanel>
         </Button>
-        <Rectangle Height="80" HorizontalAlignment="Left" Margin="648,402,0,0" Name="rectangle5" Stroke="Black" VerticalAlignment="Top" Width="10" Fill="Black" />
-        <Rectangle Height="80" HorizontalAlignment="Left" Margin="802,325,0,0" Name="rectangle6" Stroke="Black" VerticalAlignment="Top" Width="10" Fill="Black" />
-        <Button Margin="79,218,838,335" Name="fortiesButton" Click="fortiesButton_Click" Width="190">
+        <Rectangle Height="80" HorizontalAlignment="Left" Margin="710,405,0,0" Name="rectangle5" Stroke="Black" VerticalAlignment="Top" Width="10" Fill="Black" />
+        <Rectangle Height="80" HorizontalAlignment="Left" Margin="881,325,0,0" Name="rectangle6" Stroke="Black" VerticalAlignment="Top" Width="10" Fill="Black" />
+        <Button Margin="79,218,838,335" Name="fortiesButton" Click="fortiesButton_Click" Width="190" Background="#FF949392">
             <StackPanel Orientation="Horizontal">
                 <Image Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" Height="70" />
                 <TextBlock Text="1945 - 1949" VerticalAlignment="Center" />
             </StackPanel>
         </Button>
-        <Button Margin="380,218,471,335" Name="sixtiesButton" Click="sixtiesButton_Click" Width="190">
+        <Button Margin="380,218,471,335" Name="sixtiesButton" Click="sixtiesButton_Click" Width="190" Background="#FF949392">
             <StackPanel Orientation="Horizontal">
                 <Image Height="70" Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" />
                 <TextBlock Text="1960s" VerticalAlignment="Center" />
             </StackPanel>
         </Button>
-        <Button Margin="730,218,176,335" Name="eighties" Click="eighties_Click">
+        <Button Margin="786,218,120,335" Name="eighties" Click="eighties_Click" Background="#FF949392">
             <StackPanel Orientation="Horizontal">
                 <Image Height="70" Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" />
                 <TextBlock Text="1980s" VerticalAlignment="Center" />
             </StackPanel>
         </Button>
-        <Label Content="Please choose a time period." Height="38" HorizontalAlignment="Left" Margin="398,114,0,0" Name="label2" VerticalAlignment="Top" FontSize="20" FontFamily="Century" />
+        <Label Content="Please choose a time period." Height="38" HorizontalAlignment="Left" Margin="398,114,0,0" Name="label2" VerticalAlignment="Top" FontSize="20" FontFamily="Century" Foreground="#FF9C4A0E" />
         <Label Content="Have wartime memorabilia? Visit the Contact Screen to see if you could contribute to the Digital Archive." Height="34" HorizontalAlignment="Left" Margin="24,606,0,0" Name="label3" VerticalAlignment="Top" Width="739" FontSize="15" FontFamily="Century" />
-        <Button Background="LightGray" Height="63" HorizontalAlignment="Left" Margin="917,28,0,0" Name="countrySelection" VerticalAlignment="Top" Width="138" Click="countrySelection_Click">
+        <Button Background="#FF949392" Height="63" HorizontalAlignment="Left" Margin="917,28,0,0" Name="countrySelection" VerticalAlignment="Top" Width="138" Click="countrySelection_Click">
             <Image Height="46" Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" />
         </Button>
-        <Label Content="Return to country" FontFamily="Century" FontSize="20" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="894,92,0,534" Name="label4" Width="181" />
-        <Label Content="selection" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="894,114,0,0" Name="label5" VerticalAlignment="Top" Width="181" />
+        <Label Content="Return to category" FontFamily="Century" FontSize="20" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="894,92,0,534" Name="label4" Width="181" Foreground="#FF9C4A0E" />
+        <Label Content="selection" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="894,114,0,0" Name="label5" VerticalAlignment="Top" Width="181" Foreground="#FF9C4A0E" />
     </Grid>
 </Window>

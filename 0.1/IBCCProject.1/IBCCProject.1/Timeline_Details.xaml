@@ -13,13 +13,13 @@
             </VisualBrush>
         </Grid.Background>
 
-        <Label Content="Return to menu" HorizontalContentAlignment="Center" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" Margin="27,74,0,0" Name="label1" VerticalAlignment="Top" Width="170" />
-        <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="LightGray" Margin="44,19,0,0" Height="63" Width="138" Click="menuButton_Click">
+        <Label Content="Return to menu" HorizontalContentAlignment="Center" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" Margin="44,74,0,0" Name="label1" VerticalAlignment="Top" Width="170" Foreground="#FF9C4A0E" />
+        <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF949392" Margin="59,19,0,0" Height="63" Width="138" Click="menuButton_Click">
             <Image Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" Height="46"/>
         </Button>
 
         <Label Content="TIMELINE" Height="71" FontSize="48" FontFamily="Century"
-               HorizontalAlignment="Center" Margin="268,19,240,0" Name="timeline_details_title" VerticalAlignment="Top" Width="270"/>
+               HorizontalAlignment="Center" Margin="268,19,240,0" Name="timeline_details_title" VerticalAlignment="Top" Width="270" Foreground="#FF9C4A0E" FontWeight="SemiBold" />
 
         
         
@@ -27,14 +27,14 @@
         <Image Height="150" HorizontalAlignment="Left" Margin="832,284,0,0" Name="placeholderImage2" Stretch="Fill" VerticalAlignment="Top" Width="200" Source="/IBCCProject.1;component/Images/voyagerAircraft1.jpg" />
         <Image Height="150" HorizontalAlignment="Left" Margin="44,455,0,0" Name="placeholderImage3" Stretch="Fill" VerticalAlignment="Top" Width="200" Source="/IBCCProject.1;component/Images/vulcanBomber.JPEG" />
 
-        <TextBlock Height="150" HorizontalAlignment="Center" Margin="400,117,238,0" Name="factBlock1" Text="Fact Block 1" VerticalAlignment="Top" Width="491" TextAlignment="Center" FontSize="20" TextWrapping="Wrap" FontFamily="Century"/>
-        <TextBlock FontSize="20" Height="150" HorizontalAlignment="Center" Margin="44,284,243,0" Name="factBlock2" Text="Fact Block 2" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="491" FontFamily="Century"/>
-        <TextBlock FontSize="20" Height="150" HorizontalAlignment="Right" Margin="0,455,226,0" Name="factBlock3" Text="Fact Block 3" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="491" FontFamily="Century"/>
-        <Label Content="SUMMARY TEXT HERE SUMMARY TEXT HERE SUMMARY TEXT" Height="38" HorizontalAlignment="Left" Margin="288,608,0,0" Name="summaryText" VerticalAlignment="Top" Width="640" FontFamily="Century" HorizontalContentAlignment="Center" FontSize="16"/>
-        <Button Background="LightGray" Height="63" HorizontalAlignment="Left" Margin="888,19,0,0" Name="yearSelection" VerticalAlignment="Top" Width="138" Click="yearSelection_Click">
+        <TextBlock Height="150" HorizontalAlignment="Center" Margin="400,117,238,0" Name="factBlock1" Text="Fact Block 1" VerticalAlignment="Top" Width="491" TextAlignment="Center" FontSize="20" TextWrapping="Wrap" FontFamily="Century" Foreground="#FF9C4A0E" />
+        <TextBlock FontSize="20" Height="150" HorizontalAlignment="Center" Margin="44,284,243,0" Name="factBlock2" Text="Fact Block 2" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="491" FontFamily="Century" Foreground="#FF9C4A0E" />
+        <TextBlock FontSize="20" Height="150" HorizontalAlignment="Right" Margin="0,455,226,0" Name="factBlock3" Text="Fact Block 3" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="491" FontFamily="Century" Foreground="#FF9C4A0E" />
+        <Label Content="SUMMARY TEXT HERE SUMMARY TEXT HERE SUMMARY TEXT" Height="38" HorizontalAlignment="Left" Margin="288,608,0,0" Name="summaryText" VerticalAlignment="Top" Width="640" FontFamily="Century" HorizontalContentAlignment="Center" FontSize="16" Foreground="#FF9C4A0E" />
+        <Button Background="#FF949392" Height="63" HorizontalAlignment="Left" Margin="888,19,0,0" Name="yearSelection" VerticalAlignment="Top" Width="138" Click="yearSelection_Click">
             <Image Height="46" Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" />
         </Button>
-        <Label Content="Return to year" FontFamily="Century" FontSize="20" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="868,74,0,553" Name="label2" Width="170" />
-        <Label Content="selection" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="874,90,0,0" Name="label3" VerticalAlignment="Top" Width="170" />
+        <Label Content="Return to year" FontFamily="Century" FontSize="20" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="868,74,0,553" Name="label2" Width="170" Foreground="#FF9C4A0E" />
+        <Label Content="selection" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="874,90,0,0" Name="label3" VerticalAlignment="Top" Width="170" Foreground="#FF9C4A0E" />
     </Grid>
 </Window>

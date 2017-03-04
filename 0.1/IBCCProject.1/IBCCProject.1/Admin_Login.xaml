@@ -14,14 +14,14 @@
         </Grid.Background>
 
         <Label Content="Return to menu" HorizontalContentAlignment="Center" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" Margin="27,77,0,0" Name="label1" VerticalAlignment="Top" Width="170" />
-        <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="LightGray" Margin="44,19,0,0" Height="63" Width="138" Click="menuButton_Click">
+        <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF949392" Margin="44,19,0,0" Height="63" Width="138" Click="menuButton_Click">
             <Image Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" Height="46"/>
         </Button>
 
         <Label Content="LOGIN" Height="71" FontSize="48" FontFamily="Century"
-               HorizontalAlignment="Center" Margin="295,19,294,0" Name="feedback_title" VerticalAlignment="Top" Width="189"/>
+               HorizontalAlignment="Center" Margin="470,28,468,0" Name="feedback_title" VerticalAlignment="Top" Width="189" Foreground="#FF9C4A0E" FontWeight="SemiBold" />
         <TextBox Height="86" HorizontalAlignment="Left" Margin="295,250,0,0" Name="passwordBox" VerticalAlignment="Top" Width="558" FontSize="20"/>
-        <Label Content="Password" Height="41" HorizontalAlignment="Left" Margin="515,172,0,0" Name="passwordLabel" VerticalAlignment="Top" FontSize="20" FontFamily="Century" Width="103" />
-        <Button Content="Submit" Height="67" HorizontalAlignment="Left" Margin="470,396,0,0" Name="submitButton" VerticalAlignment="Top" Width="189" Click="submitButton_Click" />
+        <Label Content="Password" Height="41" HorizontalAlignment="Left" Margin="515,172,0,0" Name="passwordLabel" VerticalAlignment="Top" FontSize="20" FontFamily="Century" Width="103" Foreground="#FF9C4A0E" />
+        <Button Content="Submit" Height="67" HorizontalAlignment="Left" Margin="470,396,0,0" Name="submitButton" VerticalAlignment="Top" Width="189" Click="submitButton_Click" Background="#FF949392" />
     </Grid>
 </Window>
