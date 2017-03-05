@@ -18,7 +18,7 @@
 
         <Label Content="Return to menu" HorizontalContentAlignment="Center" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" Margin="27,27,0,0" Name="label1" VerticalAlignment="Top" Width="170" Grid.Row="1" />
         <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF949392" Margin="44,19,0,0" Height="63" Width="138" Click="menuButton_Click" Grid.RowSpan="2">
-            <Image Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" Height="46"/>
+            <Image Source="/IBCCProject.1;component/Images/homeIcon.png" Width="70" Height="46"/>
         </Button>
 
         <Label Content="FEEDBACK" Height="71" FontSize="48" FontFamily="Century"
@@ -59,8 +59,8 @@
                     <Button Click="VButton_Click" Content="V" FontFamily="Century" Height="50" HorizontalAlignment="Left" Margin="312,210,0,0" Name="VButton" VerticalAlignment="Top" Width="74" />
                     <Button Click="bButton_Click" Content="B" FontFamily="Century" Height="50" HorizontalAlignment="Left" Margin="510,210,0,0" Name="bButton" VerticalAlignment="Top" Width="74" />
                     <Button Click="nButton_Click" Content="N" FontFamily="Century" Height="50" HorizontalAlignment="Left" Margin="604,210,0,0" Name="nButton" VerticalAlignment="Top" Width="74" />
-                    <Button Click="mButton_Click" Content="M" FontFamily="Century" Height="50" HorizontalAlignment="Right" Margin="0,210,316,0" Name="mButton" VerticalAlignment="Top" Width="74" />
-                    <Viewbox Margin="-165,143,806,95">
+                    <Button Click="mButton_Click" Content="M" FontFamily="Century" Height="50" HorizontalAlignment="Right" Margin="0,210,328,0" Name="mButton" VerticalAlignment="Top" Width="74" />
+                    <Viewbox Margin="-110,144,905,97">
                         <CheckBox Content="Caps" Name="capsLock" />
                     </Viewbox>
                     <Button Click="backspaceButton_Click" Content="Bcksp" FontFamily="Century" Height="50" HorizontalAlignment="Left" Margin="977,6,0,0" Name="backspaceButton" VerticalAlignment="Top" Width="109" />
@@ -74,7 +74,7 @@
                     <Button Click="sevenButton_Click" Content="7" Height="50" HorizontalAlignment="Left" Margin="600,6,0,0" Name="sevenButton" VerticalAlignment="Top" Width="74" />
                     <Button Click="eightButton_Click" Content="8" Height="50" HorizontalAlignment="Left" Margin="699,6,0,0" Name="eightButton" VerticalAlignment="Top" Width="74" />
                     <Button Click="nineButton_Click" Content="9" Height="50" HorizontalAlignment="Left" Margin="796,6,0,0" Name="nineButton" VerticalAlignment="Top" Width="74" />
-                    <Button Click="spaceButton_Click" Content="SPACE" FontFamily="Century" Margin="412,210,594,6" Name="spaceButton" />
+                    <Button Click="spaceButton_Click" Content="SPACE" FontFamily="Century" Margin="412,210,613,7" Name="spaceButton" />
                     <Button Click="dotButton_Click" Content="." Height="50" HorizontalAlignment="Left" Margin="896,210,0,0" Name="dotButton" VerticalAlignment="Top" Width="74" />
                     <Button Click="commaButton_Click" Content="," Height="50" HorizontalAlignment="Left" Margin="796,210,0,0" Name="commaButton" VerticalAlignment="Top" Width="74" />
                     <Button Click="questionMarkButton_Click" Content="?" Height="50" HorizontalAlignment="Left" Margin="993,210,0,0" Name="questionButton" VerticalAlignment="Top" Width="74" />

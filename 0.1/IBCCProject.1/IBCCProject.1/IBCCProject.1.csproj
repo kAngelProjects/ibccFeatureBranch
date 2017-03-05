@@ -694,6 +694,7 @@
     <Resource Include="Images\previousArrow.png" />
     <Resource Include="Images\nextArrow.png" />
     <Resource Include="Images\lastArrow.png" />
+    <Resource Include="Images\homeIcon.png" />
     <Content Include="Images\RAF_Night_Raid.wmv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -29,7 +29,7 @@
 
         <Label Content="Return to menu" HorizontalContentAlignment="Center" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" Margin="27,77,0,0" Name="label1" VerticalAlignment="Top" Width="170" Foreground="#FF9C4A0E" />
         <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF949392" Margin="44,19,0,0" Height="63" Width="138" Click="menuButton_Click">
-            <Image Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" Height="46"/>
+            <Image Source="/IBCCProject.1;component/Images/homeIcon.png" Width="70" Height="46"/>
         </Button>
 
         <Label Content="ADMIN SELECT" Height="71" FontSize="48" FontFamily="Century"

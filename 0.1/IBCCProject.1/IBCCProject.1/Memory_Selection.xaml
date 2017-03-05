@@ -28,15 +28,18 @@
 
         <Label Content="Return to menu" HorizontalContentAlignment="Center" FontFamily="Century" FontSize="20" Height="34" HorizontalAlignment="Left" Margin="27,77,0,0" Name="label1" VerticalAlignment="Top" Width="170" />
         <Button Name="menuButton" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF949392" Margin="44,19,0,0" Height="63" Width="138" Click="menuButton_Click">
-            <Image Source="/IBCCProject.1;component/Images/arrow_left.png" Width="70" Height="46"/>
+            <Image Source="/IBCCProject.1;component/Images/homeIcon.png" Width="70" Height="46"/>
         </Button>
 
         <Label Content="MEMORY MENU" Height="71" FontSize="48" FontFamily="Century"
                HorizontalAlignment="Center" Margin="365,28,345,0" Name="contact_title" VerticalAlignment="Top" Width="418" Foreground="#FF9C4A0E" FontWeight="SemiBold" />
-        <ListView Name="pagination" Margin="103,158,106,136" ItemsSource="{Binding}" Background="#FFB7A87D">
+        <ListView Name="pagination" Margin="103,158,106,151" ItemsSource="{Binding}" Background="#FFB7A87D">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="Height" Value="100" />
+                    <Setter Property="FontFamily" Value="Century"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <Setter Property="FontWeight" Value="Medium"/>
                 </Style>
             </ListView.ItemContainerStyle>
             <ListView.View>
@@ -45,15 +48,18 @@
                         <Style TargetType="{x:Type GridViewColumnHeader}">
                             <!-- Set any properties you want to set -->
                             <Setter Property="Background" Value="#FF9C4A0E" />
+                            <Setter Property="BorderBrush" Value="#FF9C4A0E" />
                             <Setter Property="Foreground" Value="Black" />
                             <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="FontFamily" Value="Century" />
+                            <Setter Property="FontSize" Value="16"/>
                         </Style>
                     </GridView.ColumnHeaderContainerStyle>
-                    <GridViewColumn Header="Memory Title" Width="620" DisplayMemberBinding="{Binding Path=memory_title}" ></GridViewColumn>
-                    <GridViewColumn Header=" " Width="300">
+                    <GridViewColumn Header="Memory Title" Width="620" DisplayMemberBinding="{Binding Path=memory_title}"></GridViewColumn>
+                    <GridViewColumn Header=" " Width="307">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <Button Content="READ" Click="readMemory_Click" CommandParameter="{Binding Path=memory_id}" Width="150" Height="80"/>
+                                <Button Content="READ" Click="readMemory_Click" CommandParameter="{Binding Path=memory_id}" Width="150" Height="80" Background="#FF949392" FontFamily="Century"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
