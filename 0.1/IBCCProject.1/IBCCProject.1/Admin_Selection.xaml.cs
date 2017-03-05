@@ -150,6 +150,11 @@ namespace IBCCProject._1
                             {
                                 tmpTable.ImportRow(memory_table.Rows[i]);
                             }
+
+                            //update page no
+                            int currentPageNo = Convert.ToInt32(lblPageNumber.Content.ToString());
+                            currentPageNo = currentPageNo + 1;
+                            lblPageNumber.Content = currentPageNo.ToString();
                         }
 
                         paging_PageIndex += 1;
@@ -174,15 +179,25 @@ namespace IBCCProject._1
 
                         pagination.DataContext = tmpTable.DefaultView;
                         tmpTable.Dispose();
+
+                        int currentPageNo = Convert.ToInt32(lblPageNumber.Content.ToString());
+                        currentPageNo = currentPageNo - 1;
+                        lblPageNumber.Content = currentPageNo.ToString();
                     }
                     break;
                 case (int)PagingMode.First:
                     paging_PageIndex = 2;
                     CustomPaging((int)PagingMode.Previous);
+
+                    lblPageNumber.Content = "1";
                     break;
                 case (int)PagingMode.Last:
                     paging_PageIndex = (totalRecords / pageSize);
                     CustomPaging((int)PagingMode.Next);
+
+                    int newNumber = paging_PageIndex;
+                    lblPageNumber.Content = newNumber.ToString();
+
                     break;
             }
         } //end custom paging
